@@ -1,0 +1,18 @@
+body {
+  font-family: Arial;
+}
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.food-item {
+  border: 1px solid #ccc;
+  padding: 10px;
+  flex: 1 1 45%; /* two items per row on mobile */
+}
+@media (max-width: 600px) {
+  .food-item {
+    flex: 1 1 100%; /* full width on small screens */
+  }
+}
